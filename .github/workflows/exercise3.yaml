@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - dev
-      jobs:
-        ping-google:
-            runs-on:
-                ubuntu-latest
-            steps:
-                - name: ping google
-                  run: ping -c 4 google.com
+
+jobs:
+  ping-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ping google
+        run: ping -c 4 google.com
