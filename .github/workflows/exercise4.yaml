@@ -1,0 +1,15 @@
+name: Exercise 4
+
+on:
+  pull_request:
+    branches:
+      - dev
+  schedule:
+    - cron: '5 10 * * *'
+
+jobs:
+  thank-contributor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Thank for pull request
+        run: echo "Thanks for the pull request!"

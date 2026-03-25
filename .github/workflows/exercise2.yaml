@@ -1,11 +1,12 @@
-name: exercise2
+name: Exercise 2
+
 on:
-    push:
-        branches:
-            - main:
-                jobs:
-                    show-env:
-                        runs-on: ubuntu-latest
-                        steps:
-                            - name: print env varaibles
-                            run: env
+  push:
+    branches:
+      - main
+jobs:
+    show-env:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print all environment variables
+              run: env

@@ -1,0 +1,13 @@
+name: Exercise 3
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  ping-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ping google
+        run: curl -v google.com
