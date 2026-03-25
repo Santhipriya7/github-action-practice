@@ -1,4 +1,4 @@
-name: exercise2
+name: Exercise2
 on:
     push:
         branches:
