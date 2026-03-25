@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ping google
-        run: ping -c 4 google.com
+        run: curl -v google.com
